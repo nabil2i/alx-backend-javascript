@@ -20,9 +20,9 @@ export default class Currency {
     return this.getCode();
   }
 
-  set code(value) {
-    if (typeof value === 'string') {
-      this._code = value;
+  set code(val) {
+    if (typeof val === 'string') {
+      this._code = val;
     } else {
       throw new TypeError('Code must be a string');
     }
@@ -36,9 +36,9 @@ export default class Currency {
     return this.getName();
   }
 
-  set name(value) {
-    if (typeof value === 'string') {
-      this._name = value;
+  set name(val) {
+    if (typeof val === 'string') {
+      this._name = val;
     } else {
       throw new TypeError('Name must be a string');
     }
