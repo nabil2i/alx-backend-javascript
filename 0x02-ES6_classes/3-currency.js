@@ -12,33 +12,33 @@ export default class Currency {
     }
   }
 
-  get code() {
-    return this.getName();
-  }
-
   getCode() {
     return this._code;
   }
 
-  set code(val) {
-    if (typeof val === 'string') {
-      this._code = val;
+  get code() {
+    return this.getCode();
+  }
+
+  set code(value) {
+    if (typeof value === 'string') {
+      this._code = value;
     } else {
       throw new TypeError('Code must be a string');
     }
-  }
-
-  get name() {
-    return this.getName();
   }
 
   getName() {
     return this._name;
   }
 
-  set name(val) {
-    if (typeof val === 'string') {
-      this._name = val;
+  get name() {
+    return this.getName();
+  }
+
+  set name(value) {
+    if (typeof value === 'string') {
+      this._name = value;
     } else {
       throw new TypeError('Name must be a string');
     }
