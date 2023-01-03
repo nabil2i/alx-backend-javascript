@@ -1,0 +1,4 @@
+nodesource_setup.sh
+node_modules
+package-lock.json
+*main.js
